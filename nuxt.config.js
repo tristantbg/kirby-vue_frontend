@@ -65,6 +65,17 @@ module.exports = {
         '_.shuffle': ['lodash', 'shuffle'],
         '_.find': ['lodash', 'find']
       })
-    ]
+    ],
+    postcss: {
+      // Add plugin names as key and arguments as value
+      // Install them before as dependencies with npm or yarn
+      plugins: {
+        // Disable a plugin by passing false as value
+      },
+      preset: {
+        // Change the postcss-preset-env settings
+        autoprefixer: true
+      }
+    }
   }
 }
