@@ -19,10 +19,3 @@ yarn run dev
 yarn run build
 
 ```
-
-## Deployment
-
-To run this app via pm2 on a server use:
-``` bash
-pm2 start npm --name "mlsr-frontend" -- start
-```
