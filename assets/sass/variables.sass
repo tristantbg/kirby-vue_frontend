@@ -1,0 +1,99 @@
+$black: #121212
+$white: #fff
+$red: #dd2838
+
+$phone-ls: 667px
+$phone-pt: 500px
+$tablet-pt: 768px
+$tablet-ls: 1024px
+$desktop: 1200px
+$desktop-lg: 1440px
+
+$mp-a: 10px
+$mp-b: 20px
+$mp-c: 30px
+$mp-d: 40px
+
+$lh-m: 1.6rem
+$lh-m-s: 1.45rem
+
+@mixin fs-m()
+  font-size: 1.35rem
+  line-height: $lh-m
+  @media (max-width: $tablet-ls)
+    font-size: 1.25rem
+    line-height: $lh-m-s
+
+$lh-l: 2.35rem
+$lh-l-s: 1.95rem
+
+@mixin fs-l()
+  font-size: 1.925rem
+  line-height: $lh-l
+  letter-spacing: 0.01em
+  word-spacing: -0.025em
+  @media (max-width: $tablet-ls)
+    font-size: 1.65rem
+    line-height: $lh-l-s
+
+@mixin left()
+  text-align: left
+
+@mixin center()
+  text-align: center
+
+@mixin right()
+  text-align: right
+
+@mixin nobr()
+  white-space: nowrap
+
+@mixin hidden()
+  display: none
+
+@mixin transparent()
+  opacity: 0
+  z-index: -1
+  user-select: none
+  pointer-events: none
+
+@mixin white()
+  color: $white
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+@mixin black()
+  color: $black
+  -webkit-font-smoothing: subpixel-antialiased
+  -moz-osx-font-smoothing: normal
+
+@mixin italic()
+  font-style: italic
+
+@mixin pointer()
+  cursor: pointer
+
+@mixin tap()
+  -webkit-tap-highlight-color: transparent
+
+@mixin default()
+  cursor: default
+
+@mixin noscroll()
+  overflow-y: hidden!important
+
+@mixin bg-transition()
+  transition: background 0.5s ease-in-out
+  will-change: background
+
+@mixin color-transition()
+  transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out
+  will-change: color
+
+@mixin img-transition()
+  transition: opacity 1s ease-in-out
+  will-change: opacity
+
+@mixin page-transition()
+  transition: opacity 0.2s ease-in-out
+  will-change: opacity

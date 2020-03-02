@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "env": {
+    "API_USERNAME": "@api_username",
+    "API_PASSWORD": "@api_password"
+  },
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/now-builder",
+      "config": {}
+    }
+  ]
+}

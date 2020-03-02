@@ -1,0 +1,91 @@
+
+@import "fonts.sass"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+#__nuxt
+  font-family: 'FuturaBTHeavy', Helvetica, Courier, sans-serif
+
+body
+  @include fs-l()
+  @include black()
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+  font-size: inherit
+
+h3
+  @include fs-m()
+  display: block
+  width: 100%
+  padding-bottom: $lh-m/2
+  @media (max-width: $tablet-ls)
+    padding-bottom: $lh-m-s/2
+
+em
+  font-style: normal
+
+a
+  text-decoration: none
+  color: inherit
+  outline: 0
+  &:active, &:hover
+    outline: 0
+
+.left
+  @include left()
+
+.center
+  @include center()
+
+.right
+  @include right()
+
+.nobr
+  @include nobr()
+
+.hidden
+  @include hidden()
+
+.transparent
+  @include transparent()
+
+.italic
+  @include italic()
+
+// Transition
+.fade-leave-active, .fade-enter-active
+  @include img-transition()
+  position: absolute
+
+.fade-leave, .fade-enter-to
+  opacity: 1
+
+.fade-leave-to, .fade-enter
+  opacity: 0
+
+.fadefast-leave-active, .fadefast-enter-active
+  @include page-transition()
+  position: absolute
+
+.fadefast-leave, .fadefast-enter-to
+  opacity: 1
+
+.fadefast-leave-to, .fadefast-enter
+  opacity: 0
+
+
+//Page transition
+
+.page-enter-active, .page-leave-active
+  @include page-transition()
+
+.page-enter, .page-leave-active
+  opacity: 0
+
+
+
+

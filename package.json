@@ -1,0 +1,43 @@
+{
+  "name": "kirby-vue_frontend",
+  "version": "1.0.0",
+  "description": "Kirby Vue/Nuxt Frontend",
+  "author": "Tristan Bagot",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/sitemap": "^2.0.1",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "nuxt-ssr-cache": "^1.5.1",
+    "snarkdown": "^1.2.2",
+    "vue2-touch-events": "^1.1.2",
+    "webpack": "^4.21.0",
+    "workbox-range-requests": "^3.6.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.4",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.7.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.7.1",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "sass-resources-loader": "^2.0.1"
+  },
+  "config": {
+    "nuxt": {
+      "port": "8080"
+    }
+  }
+}
